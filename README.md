@@ -4,8 +4,8 @@
 
 ### Base Docker Image
 
-* `latest`: aptcacher 0.7
-* `0.7`   : aptcacher 0.7
+* `latest`: aptcacher 1.7
+* `1.7`   : aptcacher 1.7
 
 ### Installation
 
@@ -13,4 +13,4 @@
 
 ### Usage
 
-    docker run -it --rm baselibrary/aptcacher
+    docker run -it -p 3142:3142 -v $(pwd)/cache:/var/cache/apt-cacher:rw baselibrary/aptcacher
